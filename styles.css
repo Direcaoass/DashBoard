@@ -4,57 +4,87 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
+.container-grid {
+  display: inline-grid;
+  grid-template: repeat(4, 1fr)/repeat(5, 1fr);
+  background-color: burlywood;
+  height: 100vh;
+  width: 100vw;
 }
 
-.left-side {
-  background-color: burlywood;
-  width: 15%;
-  min-height: 100vh;
-  display: flex;
-}
-.right-side{
-  background-color: rgb(221, 222, 135);
-  width: 85%;
-  display: flex;
-  flex-wrap: wrap;
+.left-menu {
+  background-color: lightskyblue;
+  grid-area: 1/1/5/1;
 }
 
 .header {
-  background-color: rgb(187, 202, 99);
-  min-width:100%;
-  height: 15%;
-  display: flex;
+  background-color: whitesmoke;
+  grid-area: 1/2/1/6;
+  position: sticky;
+}
+
+.projects {
+  background-color: lightgray;
+  grid-area: 2/2/5/5;
+  padding: 25px;
+  overflow: auto;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 5px;
+
 
 }
 
-.projects{
-  background-color: rgb(160, 47, 117);
-  min-width:80%;
-  min-height:85%;
-  display: flex;
+.project {
+  background-color: whitesmoke;
+  border-left: 5px solid darkslategrey;
+  border-radius: 10px;
+  height: 150px;
+  padding: 10px;
 }
 
-.rightMenu{
-
-  background-color: rgb(5, 5, 5);
-  min-width:20%;
-  height:85%;
-  display: flex;
-  flex-wrap: wrap;
+.announ-trending {
+  background-color: lightgray;
+  grid-area: 2/5/6/6;
+  padding: 25px;
+  
+  
 
 }
-.announcements{
-  background-color: rgb(47, 160, 66);
-  min-width:100%;
-  min-height:50%;
-  display: flex;
+
+.announcements-grid {
+  
+  background-color: lightgray;
+  height: 50%;
+
 }
 
-.trending{
-  background-color: rgb(31, 43, 112);
-  min-width:100%;
-  min-height:50%;
-  display: flex;
+.announcements-content {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  height: 180px;
+  padding: 10px;
+  margin-top: 5px;
+
+}
+
+.trending-grid {
+  background-color: lightgray;
+  
+
+}
+
+.trending-content {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  height: 180px;
+  padding: 10px;
+  margin-top: 5px;
+
 }
