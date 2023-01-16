@@ -17,8 +17,8 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  
-  
+
+
 }
 
 .logo {
@@ -26,12 +26,12 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: whitesmoke;
   font-weight: bold;
   font-size: 1.8rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
 }
 
 .left-menu ul {
@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.left-menu a:hover {
+  transform: scale(1.2);
+}
+
 .left-menu i {
   min-width: 40px;
 }
@@ -62,8 +66,85 @@
 .header {
   background-color: whitesmoke;
   grid-area: 1/2/1/7;
+  height: 100%;
+
 
 }
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 50%;
+
+}
+
+.header-top-right {
+  display: flex;
+  height: 30%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header-top-right img {
+  border-radius: 50%;
+  height: 90%;
+}
+
+.header-top-left {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  height: 30%;
+  align-items: center;
+
+}
+
+.header-top-left input {
+  border-radius: 10px;
+  background-color: lightgray;
+  min-width: 70%;
+  min-height: 100%;
+  border: none;
+}
+
+.header-down {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-down-left {
+  display: flex;
+}
+
+.header-down-left img {
+  min-height: 2rem;
+  border-radius: 50%;
+}
+
+.header-down-right {
+  display: flex;
+  gap: 15px;
+}
+
+.header-down-right button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(70, 142, 187);
+  color: white;
+  min-width: 5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 
 .projects {
   background-color: lightgray;
@@ -106,8 +187,36 @@
   border-left: 5px solid darkslategrey;
   border-radius: 10px;
   height: 250px;
-  padding: 10px;
+  padding: 25px;
+
 }
+
+.project-text {
+  min-width: 100%;
+  min-height: 90%;
+}
+
+.project-content p {
+  margin-top: 5px;
+  color: gray;
+  text-align: justify;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+
+}
+
+.project-icon i {
+  color: gray;
+}
+
+.project-icon i:hover {
+  transform: scale(1.2);
+}
+
 
 .trending-content {
   background-color: whitesmoke;
