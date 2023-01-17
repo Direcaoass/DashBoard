@@ -6,14 +6,14 @@
 
 .container-grid {
   display: inline-grid;
-  grid-template: repeat(5, 1fr)/repeat(6, 1fr);
+  grid-template: repeat(6, 1fr) / repeat(6, 1fr);
   height: 100vh;
   width: 100vw;
 }
 
 .left-menu {
   background-color: rgb(70, 142, 187);
-  grid-area: 1/1/6/1;
+  grid-area: 1/1/7/1;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -66,18 +66,22 @@
 .header {
   background-color: whitesmoke;
   grid-area: 1/2/1/7;
-  height: 100%;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:0.2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
   height: 50%;
+
 
 }
 
@@ -92,7 +96,7 @@
 
 .header-top-right img {
   border-radius: 50%;
-  height: 90%;
+  height: 2rem;
 }
 
 .header-top-left {
@@ -108,39 +112,46 @@
   border-radius: 10px;
   background-color: lightgray;
   min-width: 70%;
-  min-height: 100%;
+  min-height: 1.5rem;
   border: none;
 }
 
 .header-down {
   display: flex;
   justify-content: space-between;
-  height: 50%;
-  padding: 1rem 2rem;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
+  
 }
 
 .header-down-left {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+
 }
 
 .header-down-left img {
-  min-height: 2rem;
+  height: 4rem;
   border-radius: 50%;
+
 }
 
 .header-down-right {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
+
+
 }
 
 .header-down-right button {
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
   background-color: rgb(70, 142, 187);
   color: white;
-  min-width: 5rem;
+  min-width: 6rem;
+  min-height: 2rem;
   cursor: pointer;
   font-weight: bold;
 }
@@ -148,15 +159,8 @@
 
 .projects {
   background-color: lightgray;
-  grid-area: 2/2/6/6;
-  padding: 25px;
-  overflow: auto;
-}
-
-.announ-trending {
-  background-color: lightgray;
-  grid-area: 2/6/6/7;
-  padding: 25px;
+  grid-area: 2/2/7/6;
+  padding: 1.5rem;
   overflow: auto;
 }
 
@@ -167,18 +171,6 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
   margin-top: 5px;
-}
-
-.announcements-grid {
-
-  background-color: lightgray;
-  height: 50%;
-}
-
-.trending-grid {
-  background-color: lightgray;
-  margin-top: 70px;
-
 }
 
 
@@ -218,21 +210,71 @@
 }
 
 
-.trending-content {
-  background-color: whitesmoke;
-  border-radius: 10px;
-  height: 250px;
-  padding: 10px;
-  margin-top: 5px;
+.announ-trending {
+  background-color: lightgray;
+  grid-area: 2/6/7/7;
+  padding: 1.5rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
 
+.announcements-grid {
+
+  background-color: lightgray;
+  height: 50%;
 }
 
 .announcements-content {
   background-color: whitesmoke;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 0.5rem;
+
+
+}
+
+.announc-border {
+  border-bottom: 1px solid lightgray;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+
+.trending-grid {
+  background-color: lightgray;
+  margin-top: 70px;
+
+}
+
+.trending-content {
+  background-color: whitesmoke;
+  border-radius: 10px;
   height: 250px;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+}
 
+.trending-block {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.trending-block img {
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.trending-block p {
+  color: gray;
+  font-size: 0.8rem;
 }
